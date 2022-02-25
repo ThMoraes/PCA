@@ -4,18 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body id="body" class="body">
     <section class="autenticacao" id="autenticacao">
-        <p>Insira o CPF ou matricula: <input type="text" id="campoLogin" value="Thiago"></p>    
-        <p>Senha: <input type="text" id="campoSenha"></p>
-        <input type="button" value="entrar" onclick="consultar()">
-    </section>
-    <hr>
-    <section class="consulta" id="consulta">
-        <p>Nome: <input type="text" id="nomeCompleto" value=""></p>
+        <div class="divisaoAutenticacao">
+            <p class="descrcaoDivisaoAutenticacao"><span class="nomeInput">Insira o CPF ou matricula: </span><input type="text" class="campoAutenticacao" id="campoLogin" value=""></p>    
+            <p class="descrcaoDivisaoAutenticacao"><span class="nomeInput">Senha: </span><input type="text" id="campoSenha" class="campoAutenticacao"></p>
+            <div class="conteudoBotaoAcessar">
+                <input type="button" value="Acessar" class="botaoAcessar" onclick="Acessar()">
+            </div>
+            <p>Login: 12345 um Funcionário específico</p>
+            <p>Login: Qualquer número de 5 caracteres um Funcionário genérico</p>
+            <p>Login: 00123456789 um Paciente específico</p>
+            <p>Login: Qualquer número de 11 caracteres um Paciente genérico</p>
+        </div>
     </section>
 
-    <script scr="script.js"></script>
+    
+    <section class="divisaoBotaoVoltar" id="divisaoBotaoVoltar">
+        <span class="material-icons" id="nomeBotaoAcessibilidade" onclick="window.location.reload()">arrow_back</span>
+    </section>
+
+    
+    <section class="acessoFuncionario" id="acessoFuncionario">
+        <div class="divisaoacessoFuncionario">        
+            <p class="descricaoAcessoFuncionario"><span class="nomeInput">Nome Completo: </span><input type="text" id="nomeCompletoFuncionario" value=""></p>
+            <p class="descricaoAcessoFuncionario"><span class="nomeInput">Idade: </span><input type="text" id="idadeFuncionario" value=""></p>
+            <p class="descricaoAcessoFuncionario"><span class="nomeInput">Grupo Saguígneo: </span><input type="text" id="grupoSaguígneoFuncionario" value=""></p>
+            <p class="descricaoAcessoFuncionario"><span class="nomeInput">Problemas de Saúde: </span><input type="text"id="problemasSaudeFuncionario" value=""></p>
+            <p class="descricaoAcessoFuncionario"><span class="nomeInput">Alergia: </span><input type="text" id="alergiaFuncionario" value=""></p>
+            <p class="descricaoAcessoFuncionario"><span class="nomeInput">Peso: </span><input type="text" id="pesoFuncionario" value=""></p>
+            <p class="descricaoAcessoFuncionario"><span class="nomeInput">Altura: </span><input type="text" id="alturaFuncionario" value=""></p>
+        </div>
+    </section>
+
+    <section class="acessoPaciente" id="acessoPaciente">
+        <div class="divisaoBotaoVoltar">
+            <span class="material-icons" id="nomeBotaoAcessibilidade" onclick="window.location.reload()">arrow_back</span>
+        </div>
+        <div class="divisaoacessoPaciente">        
+            <p class="descricaoAcessoPaciente"><span class="nomeInput">Nome Completo: </span><input type="text" id="nomeCompletoPaciente" value=""></p>
+            <p class="descricaoAcessoPaciente"><span class="nomeInput">Idade: </span><input type="text" id="idadePaciente" value=""></p>
+            <p class="descricaoAcessoPaciente"><span class="nomeInput">Grupo Saguígneo: </span><input type="text" id="grupoSaguígneoPaciente" value=""></p>
+            <p class="descricaoAcessoPaciente"><span class="nomeInput">Problemas de Saúde: </span><input type="text"id="problemasSaudePaciente" value=""></p>
+            <p class="descricaoAcessoPaciente"><span class="nomeInput">Alergia: </span><input type="text" id="alergiaPaciente" value=""></p>
+            <p class="descricaoAcessoPaciente"><span class="nomeInput">Peso: </span><input type="text" id="pesoPaciente" value=""></p>
+            <p class="descricaoAcessoPaciente"><span class="nomeInput">Altura: </span><input type="text" id="alturaPaciente" value=""></p>
+        </div>
+    </section>
+
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

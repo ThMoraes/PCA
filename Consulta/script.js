@@ -1,19 +1,45 @@
-function consultar(){
-    /* var nome = document.getElementById("campoLogin");  */   
+function Acessar(){
+    var body = document.getElementById("body");
 
-    if(document.getElementById("campoLogin").value == "Thiago"){
-        /* var nomeCompleto = document.getElementById("nomeCompleto"); */
+    
+    var divisaoBotaoVoltar = document.getElementById("divisaoBotaoVoltar");
+    
+    var campoLogin = document.getElementById("campoLogin").value;
+    var quantVet = parseInt(campoLogin.length);
 
-        document.getElementById("nomeCompleto").value = "Thiago";
+    var nomeCompletoFuncionario = document.getElementById("nomeCompletoFuncionario");
+    var nomeCompletoPaciente = document.getElementById("nomeCompletoPaciente");
+
+    
+    var autenticacao = document.getElementById("autenticacao");
+    var acessoFuncionario = document.getElementById("acessoFuncionario");
+
+    if(campoLogin == "12345"){        
+        body.className = "bodyAcesso";
+        divisaoBotaoVoltar.className = " divisaoBotaoVoltarMostrar";
+        nomeCompletoFuncionario.value = "Alcimar";
+        acessoFuncionario.className = "acessoFuncionarioMostrar";
+        autenticacao.className = "autenticacaoOcultar";
     }
-    else if(document.getElementById("campoLogin").value == "Matheus"){
-        /* var nomeCompleto = document.getElementById("nomeCompleto"); */
-
-        document.getElementById("nomeCompleto").value = "Matheus";
+    else if(campoLogin == "00123456789"){
+        body.className = "bodyAcesso";
+        divisaoBotaoVoltar.className = " divisaoBotaoVoltarMostrar";
+        nomeCompletoPaciente.value = "Lucas";
+        acessoPaciente.className = "acessoPacienteMostrar";
+        autenticacao.className = "autenticacaoOcultar";
     }
-    else{
-        /* var nomeCompleto = document.getElementById("nomeCompleto"); */
-
-        document.getElementById("nomeCompleto").value = "ERRO";
+    else if(quantVet == 5){
+        body.className = "bodyAcesso";
+        divisaoBotaoVoltar.className = " divisaoBotaoVoltarMostrar";
+        nomeCompletoFuncionario.value = "Funcionário";
+        acessoFuncionario.className = "acessoFuncionarioMostrar";
+        autenticacao.className = "autenticacaoOcultar";
+    }
+    else if(quantVet == 11){
+        body.className = "bodyAcesso";
+        divisaoBotaoVoltar.className = " divisaoBotaoVoltarMostrar";
+        nomeCompletoPaciente.value = "Paciente";
+        acessoPaciente.className = "acessoPacienteMostrar";
+        autenticacao.className = "autenticacaoOcultar";
     }
 }

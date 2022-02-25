@@ -1,0 +1,125 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+.body{
+    background:url(../img/FundoAutenticacao.png) repeat-x fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    background-position: center;
+}
+.bodyAcesso{
+    background:url(../img/FundoOficial.png) repeat-x fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    background-position: center;
+}
+
+
+/* autenticacao */
+.autenticacao{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.autenticacaoOcultar{
+    display: none;
+}   
+
+.divisaoAutenticacao{
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 10px;
+    border-radius: 10px;
+    border: black 1px solid;
+}
+.descrcaoDivisaoAutenticacao{
+    margin: 5px 0px;
+}
+.campoAutenticacao{
+    text-align: center;
+    float: right;
+    border-radius: 5px;
+    border: black 1px solid;
+}
+
+.conteudoBotaoAcessar{
+    display: flex;
+}
+.botaoAcessar{
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    background-color: rgb(60, 60, 60);
+    color: #ffffff;
+    transform: translateX(0) scale(1.0);
+}
+.botaoAcessar:hover,
+.botaoAcessar:focus {
+  background: red;
+  font-size: 15px;
+  margin: 9px auto;
+}
+
+
+
+
+/* acessoFuncionario */
+.acessoFuncionario{
+    display: none;
+}
+.acessoFuncionarioMostrar{
+    display:table;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.divisaoacessoFuncionario{
+    background-color: rgb(208, 208, 208);
+    padding: 10px;
+    border-radius: 10px;
+    border: black 1px solid;
+}
+
+.descricaoAcessoFuncionario{
+    margin: 5px 0px;
+}
+
+
+/* acessoPaciente */
+.acessoPaciente{
+    display: none;
+}
+.acessoPacienteMostrar{
+    display:table;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.divisaoacessoPaciente{
+    background-color: rgb(208, 208, 208);
+    padding: 10px;
+    border-radius: 10px;
+    border: black 1px solid;
+}
+
+.descricaoAcessoPaciente{
+    margin: 5px 0px;
+}
+
+
+.divisaoBotaoVoltar{
+    display: none;
+}
+.divisaoBotaoVoltarMostrar{
+    display: grid;
+}
