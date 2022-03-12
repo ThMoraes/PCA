@@ -1,3 +1,38 @@
+<?php
+    if(isset($_POST['submit'])){   
+        
+        include_once('cadastrarpaciente.php');
+
+        $CPF = $_POST['CPF']);
+        $Prontuário = $_POST['Prontuário']);
+        $NomeCompleto = $_POST['Nome Completo']);
+        $TipoSaguíneo = $_POST['Tipo Saguíneo']);
+        $Email = $_POST['Email']);
+        $Telefone = $_POST['(DD) Telefone']);
+        $CEP = $_POST['CEP']);
+        $Rua = $_POST['Rua']);
+        $Número = $_POST['Número']);
+        $Complemento = $_POST['Complemento']);
+        $Cidade = $_POST['Cidade']);
+        $Município = $_POST['Município']);
+        $PontoReferência = $_POST['Ponto de Referência']);
+        $UF = $_POST['UF']);
+        $LocalNascimento = $_POST['Local de Nascimento']);
+        $EstadoCivil = $_POST['Estado Civil']);
+        $Sexo = $_POST['Sexo']);
+        $NomePai = $_POST['Nome do Pai']);
+        $TelefonePai = $_POST['(DD) Telefone do Pai']);
+        $NomeMãe = $_POST['Nome da Mãe']);
+        $TelefoneMãe = $_POST['Telefone da Mãe']);
+        $SalaAtendimento = $_POST['Sala de Atendimento']);
+        $Sintomas = $_POST['Sintomas']);
+        $Alergias = $_POST['Alergias']);
+        $DoençasCrônicas = $_POST['Doenças Crônicas']);
+        $RemédiosControlados = $_POST['Toma Remédios Controlados']);
+
+        $result = mysqli_query($conexao, "INSERT INTO cadastropacientes(CPF,Prontuário,Nome Completo,Tipo Saguíneo,Email,(DD) Telefone,CEP,Rua,Número,Complemento,Cidade,Município,Ponto de Referência,UF,Local de Nascimento,Estado Civil,Sexo,Nome do Pai,(DD) Telefone do Pai,Nome da Mãe,Telefone da Mãe,Sala de Atendimento,Sintomas,Alergias,Doenças Crônicas,Toma Remédios Controlados) VALUES ('$CPF','$Prontuário','$NomeCompleto','$TipoSaguíneo','$Email','$Telefone','$CEP','$Rua','$Número','$Complemento','$Cidade','$Município','$PontoReferência','$UF','$LocalNascimento','$EstadoCivil','$Sexo','$NomePai','$TelefonePai','$NomeMãe','$TelefoneMãe','$SalaAtendimento','$Sintomas','$Alergias','$DoençasCrônicas','$RemédiosControlados')")
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -250,7 +285,7 @@
                     <h1 class="nomeTituloFuncionarioCadastrarPaciente">CADASTRAR PACIENTE</h1>
                 </div>            
                 <div class="divisaoFuncionarioCadastrarPaciente" id="divisaoFuncionarioCadastrarPaciente">
-                    <form action="">
+                    <form action="index.php" method="POST">
                         <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteCPF">
                             <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteCPF" id="funcionarioCadastrarPacienteCPF">CPF</label><br>
                             <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteCPF" name="funcionarioCadastrarPacienteCPF" value="">
@@ -360,7 +395,7 @@
                             <textarea type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteRemediosControlados" name="funcionarioCadastrarPacienteRemediosControlados"></textarea>
                         </div>
                     </form>                    
-                    <input type="button" value="CADASTRAR PACIENTE" class="botaoCadastrarPaciente" onclick="cadastrarPacienteCriado()">
+                    <input type="submit" name="submit" id="submit" value="CADASTRAR PACIENTE" class="botaoCadastrarPaciente" onclick="cadastrarPacienteCriado()">
 
                 </div>
             </div>

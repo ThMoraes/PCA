@@ -200,44 +200,23 @@ body{
 .acessoFuncionario{
     display: none;
 }
-.acessoFuncionarioMostrar{
+.acessoFuncionarioMostrar, .acessoFuncionarioMostrarOriginal{
     display: grid;
     width: 100%;
     margin: 0px auto;
     grid-template-columns: 220px auto;
 }
-.acessoFuncionarioFecharMenu{
-    display: grid;
-    grid-template-columns: 100%;
-}
-.menuAcessoFuncionario{
+.menuAcessoFuncionario, .menuAcessoFuncionarioOriginal{
     display: block;
     position: relative;
     left: 0;
     background: linear-gradient(180deg, #0B78A7 70%, #23E5FF);
     min-height: 100vh;
     max-height: 100%;
-    padding-top: 25px;
+    padding-top: 20px;
 }
-.menuAcessoFuncionarioOcultar{
+.botaoHaburguerAcessoFuncionario{
     display: none;
-}
-.menuAcessoFuncionarioFecharMenu{
-    display: none;
-}
-.menuHamburguerAcessoFuncionario,.menuFecharAcessoFuncionario{
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #126dde;
-    border-radius: 0% 0% 50%;
-    border-right: #ffffff solid 1px;
-    border-bottom: #ffffff solid 1px;
-    cursor: pointer;
-}
-#botaoHamburguer,#botaoFechar{
-    color: #ffffff;
-    padding: 10px;
 }
 .dadosAcessoFuncionario{
     display: grid;
@@ -296,28 +275,21 @@ body{
 
 /* consultarCadastro */
 .consultarCadastro{
-    width: 100%;
+    display: inline;
     margin: auto;
-    display: block;
-    overflow: scroll;
-    height: 100%;
 }
-.consultarCadastro::-webkit-scrollbar { 
-	display: none;
-}
-
 .consultarCadastroOcultar{
     display: none;
 }
 
 .nomeTituloConsultarCadastro{
-    text-align: center;
     font-size: 40px;
     color: #126dde;
-    margin: 17px 0px;
+    margin-top: -70%;
+    margin-bottom: 70%;
 }
 .conteudoConsultarCadastro{
-    width: 100px;
+    width: 10vw;
     margin: 50px auto;
 }
 .campoConsultarCadastro{
@@ -346,7 +318,7 @@ body{
     width: 100%;
     margin: auto;
     display: block;
-    overflow: scroll;
+    overflow-y: scroll;
     height: 100%;
 }
 .funcionarioConsultarCadastroCriadoMostrar::-webkit-scrollbar { 
@@ -475,14 +447,14 @@ body{
 }
 
 /*funcionarioCadastrarPaciente*/
-.funcionarioCadastrarPaciente{
+.adastrarPaciente{
     display: none;
 }
-.funcionarioCadastrarPacienteMostrar{
+.adastrarPacienteMostrar{
     width: 100%;
     margin: auto;
     display: block;
-    overflow: scroll;
+    overflow-y: scroll;
     height: 100%;
 }
 .funcionarioCadastrarPacienteMostrar::-webkit-scrollbar { 
@@ -621,35 +593,25 @@ body{
 }
 
 
-
-
 @media only screen and (max-width: 750px) {
+    .acessoFuncionarioMostrar{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .botaoHaburguerAcessoFuncionario{
+        display: inline;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 1px;
+        padding: 5px;
+        background-color: #0B78A7;
+        color: #23E5FF;
+    }
     .menuAcessoFuncionario{
         display: none;
     }
-    .menuAcessoFuncionarioAbrir{
-        display: block;
-        position: relative;
-        left: 0;
-        background: linear-gradient(180deg, #0B78A7 70%, #23E5FF);
-        min-height: 100vh;
-        max-height: 100%;
-        padding-top: 25px;
-    }
-    .acessoFuncionarioMostrar{
-        display: grid;
-        grid-template-columns: 100%;
-    }
-    .acessoFuncionarioAbrir{
-        display: grid;
-        width: 100%;
-        margin: 0px auto;
-        grid-template-columns: 220px auto;
-    }
 }
-
-
-
 
 
 

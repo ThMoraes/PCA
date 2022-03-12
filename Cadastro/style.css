@@ -1,0 +1,105 @@
+
+.divisaoFuncionarioConsultarCadastroCriado{
+    display:flex;
+    flex-wrap:wrap;
+    width: 530px;
+    margin: auto;
+    background-color: aqua;
+}
+.descricaoFuncionarioConsultarCadastroCriado{
+    flex:1 1 auto;
+    margin: 5px 3px;
+    background-color: red;
+}
+#descricaoFuncionarioConsultarCadastroCriadoCPF, #descricaoFuncionarioConsultarCadastroCriadoProntuario{
+    width: 250px;
+}
+#funcionarioConsultarCadastroCriadoCPF, #funcionarioConsultarCadastroCriadoProntuario{
+    width: 250px;
+}
+
+
+#descricaoFuncionarioConsultarCadastroCriadoNomeCompleto{
+    width: 411px;
+}
+#funcionarioConsultarCadastroCriadoNomeCompleto{
+    width: 411px;
+}
+
+#descricaoFuncionarioConsultarCadastroCriadoTipoSaguineo{
+    width: 91px;
+}
+#funcionarioConsultarCadastroCriadoTipoSaguineo{
+    width: 91px;
+    text-align: center;
+}
+
+#descricaoFuncionarioConsultarCadastroCriadoCEP{
+    width: 110px;
+}
+#funcionarioConsultarCadastroCriadoCEP{
+    width: 109px;
+}
+
+
+#descricaoFuncionarioConsultarCadastroCriadoRua{
+    width: 290px;
+}
+#funcionarioConsultarCadastroCriadoRua{
+    width: 290px;
+}
+
+#descricaoFuncionarioConsultarCadastroCriadoNumero{
+    width: 90px;
+}
+#funcionarioConsultarCadastroCriadoNumero{
+    width: 89px;
+    text-align: center;
+}
+
+
+#descricaoFuncionarioConsultarCadastroCriadoEmail{
+    width: 330px;
+
+}
+#funcionarioConsultarCadastroCriadoEmail{
+    width: 331px;
+}
+
+#descricaoFuncionarioConsultarCadastroCriadoTelefone{
+    width: 170px;
+
+}
+#funcionarioConsultarCadastroCriadoTelefone{
+    width: 171px;
+    text-align: center;
+}
+
+/* #descricaoFuncionarioConsultarCadastroCriadoCPF{
+    width: 200px;
+    float: left;
+}
+#descricaoFuncionarioConsultarCadastroCriadoProntuario{
+    width: 200px;
+    float: right;
+}
+#descricaoFuncionarioConsultarCadastroCriadoNomeCompleto{
+    width: 300px;
+    float: left;
+}
+#descricaoFuncionarioConsultarCadastroCriadoTipoSaguineo{
+    width: 100px;
+    float: right;
+}
+#descricaoFuncionarioConsultarCadastroCriadoCEP{
+    width: 100px;
+    float: left;
+}
+#descricaoFuncionarioConsultarCadastroCriadoRua{
+    width: 100px;
+    float: center;
+}
+#descricaoFuncionarioConsultarCadastroCriadoNumero{
+    width: 100px;
+    float: right;
+} */

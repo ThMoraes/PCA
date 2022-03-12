@@ -81,15 +81,12 @@
 
     
     <section class="acessoFuncionario" id="acessoFuncionario">
-        <div class="menuHamburguerAcessoFuncionario" id="menuHamburguerAcessoFuncionario">
-            <p class="LinkbotaoHamburguer"><span class="material-icons" id="botaoHamburguer" onclick="menuHamburguer()">menu</span></p>
+        <div class="botaoHaburguerAcessoFuncionario" id="botaoHaburguerAcessoFuncionario">
+            <p class="LinkbotaoHaburguer"><span class="material-icons" id="botaoHaburguer" onclick="menuHamburguer()">menu</span></p>
         </div>
 
         <div class="menuAcessoFuncionario" id="menuAcessoFuncionario">
-            <div class="menuFecharAcessoFuncionario" id="menuFecharAcessoFuncionario">
-                <p class="LinkbotaoFechar"><span class="material-icons" id="botaoFechar" onclick="menuFechar()">close</span></p>
-            </div>
-            <div class="dadosAcessoFuncionario" id="dadosAcessoFuncionario">
+            <div class="dadosAcessoFuncionario">
                 <img src="img/iconeAvatar.png" class="imagemFuncionario">
                 <p class="descricaoMenuAcessoFuncionario" id="descricaoMenuAcessoFuncionarioNome">Nome: 
                     <span class="nomeAcessoFuncionario" id="nomeAcessoFuncionarioNome"></span>
@@ -102,7 +99,7 @@
                 </p>
             </div>
 
-            <div class="dadosMenuAcessoFuncionario" id="dadosMenuAcessoFuncionario">
+            <div class="dadosMenuAcessoFuncionario">
                 <p class="dadoMenuAcessoFuncionario" id="menuConsultarCadastro" onclick="menuConsultarCadastro()" onmouseover="dadoMenuAcessoFuncionarioOver()"><span class="material-icons iconedadoMenuAcessoFuncionario" id="iconeMenuConsultarCadastro">how_to_reg</span> <span class="nomeDadoMenuAcessoFuncionario">Consultar cadastro</span></p>
                 <p class="dadoMenuAcessoFuncionario" id="menuCadastrarPaciente" onclick="menuCadastrarPaciente()"><span class="material-icons iconedadoMenuAcessoFuncionario" id="iconeMenuCadastrarPaciente">person_add</span> <span class="nomeDadoMenuAcessoFuncionario">Cadastrar paciente</span></p>
                 <p class="dadoMenuAcessoFuncionario" id="menuCriarFichaAtendimento" onclick="menuCriarFichaAtendimento()"><span class="material-icons iconedadoMenuAcessoFuncionario" id="iconeMenuCriarFichaAtendimento">create_new_folder</span> <span class="nomeDadoMenuAcessoFuncionario">Criar ficha de atendimento</span></p>
@@ -117,12 +114,12 @@
                     <h1 class="nomeTituloConsultarCadastro">CONSULTAR CADASTRO</h1>
                 </div>            
                 <div class="conteudoConsultarCadastro" id="conteudoConsultarCadastro">
-                    <div class="descricaoConsultarCadastro">
+                    <p class="descricaoConsultarCadastro">
                         <label class="nomeInputconsultarCadastro">CPF</label>
                         <br>
                         <input type="text"class="campoConsultarCadastro" id="campoConsultarCadastroCPF" value="85263149075">
+                    </p>
                     <input type="button" value="CONSULTAR" class="botaoConsultarCadastro" onclick="consultarCadastroCriado()">
-                </div>
                 </div>
             </div>
 
@@ -244,122 +241,121 @@
             </div>
         </div>
 
-        <div class="CadastrarPaciente" id="CadastrarPaciente">
+        <div class="cadastrarPaciente" id="cadastrarPaciente">
             <div class="funcionarioCadastrarPaciente" id="funcionarioCadastrarPaciente">
                 <div class="tituloFuncionarioCadastrarPaciente" id="tituloFuncionarioCadastrarPaciente">
                     <h1 class="nomeTituloFuncionarioCadastrarPaciente">CADASTRAR PACIENTE</h1>
                 </div>            
                 <div class="divisaoFuncionarioCadastrarPaciente" id="divisaoFuncionarioCadastrarPaciente">
-                    <form action="">
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteCPF">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteCPF" id="funcionarioCadastrarPacienteCPF">CPF</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteCPF" name="funcionarioCadastrarPacienteCPF" value="">
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteProntuario">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteProntuario" id="funcionarioCadastrarPacienteProntuario">Prontuário</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteProntuario" name="funcionarioCadastrarPacienteProntuario" value="">
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteNomeCompleto">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteNomeCompleto" id="funcionarioCadastrarPacienteNomeCompleto">Nome Completo</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteNomeCompleto" name="funcionarioCadastrarPacienteNomeCompleto" value="">
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteTipoSaguineo">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteTipoSaguineo" id="funcionarioCadastrarPacienteTipoSaguineo">Tipo Saguíneo</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteTipoSaguineo" name="funcionarioCadastrarPacienteTipoSaguineo" value="">
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteEmail">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteEmail" id="funcionarioCadastrarPacienteEmail">Email</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteEmail" name="funcionarioCadastrarPacienteEmail" value="">
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteTelefone">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteTelefone" id="funcionarioCadastrarPacienteTelefone">(DD) Telefone</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteTelefone" name="funcionarioCadastrarPacienteTelefone" value="">
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteCEP">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteCEP" id="funcionarioCadastrarPacienteCEP">CEP</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteCEP" name="funcionarioCadastrarPacienteCEP" value="">
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteRua">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteRua" id="funcionarioCadastrarPacienteRua">Rua</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteRua" name="funcionarioCadastrarPacienteRua" value="">
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteNumero">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteNumero" id="funcionarioCadastrarPacienteNumero">Número</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteNumero" name="funcionarioCadastrarPacienteNumero" value="">
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteComplemento">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteComplemento" id="funcionarioCadastrarPacienteComplemento">Complemento</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteComplemento" name="funcionarioCadastrarPacienteComplemento" value="">
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteCidade">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteCidade" id="funcionarioCadastrarPacienteCidade">Cidade</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteCidade" name="funcionarioCadastrarPacienteCidade" value="">
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteMunicipio">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteMunicipio" id="funcionarioCadastrarPacienteMunicipio">Município</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteMunicipio" name="funcionarioCadastrarPacienteMunicipio" value="">
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacientePontoReferencia">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacientePontoReferencia" id="funcionarioCadastrarPacientePontoReferencia">Ponto de Referência</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacientePontoReferencia" name="funcionarioCadastrarPacientePontoReferencia" value="">
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteUF">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteUF" id="funcionarioCadastrarPacienteUF">UF</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteUF" name="funcionarioCadastrarPacienteUF" value="">
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteLocalNascimento">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteLocalNascimento" id="funcionarioCadastrarPacienteLocalNascimento">Local de Nascimento</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteLocalNascimento" name="funcionarioCadastrarPacienteLocalNascimento" value="">
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteEstadoCivil">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteEstadoCivil" id="funcionarioCadastrarPacienteEstadoCivil">Estado Civil</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteEstadoCivil" name="funcionarioCadastrarPacienteEstadoCivil" value="">
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteSexo">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteSexo" id="funcionarioCadastrarPacienteSexo">Sexo</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteSexo" name="funcionarioCadastrarPacienteSexo" value="">
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteNomePai">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteNomePai" id="funcionarioCadastrarPacienteNomePai">Nome do Pai</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteNomePai" name="funcionarioCadastrarPacienteNomePai" value="">
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteTelefonePai">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteTelefonePai" id="funcionarioCadastrarPacienteTelefonePai">(DD) Telefone</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteTelefonePai" name="funcionarioCadastrarPacienteTelefonePai" value="">
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteNomeMae">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteNomeMae" id="funcionarioCadastrarPacienteNomeMae">Nome da Mãe</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteNomeMae" name="funcionarioCadastrarPacienteNomeMae" value="">
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteTelefoneMae">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteTelefoneMae" id="funcionarioCadastrarPacienteTelefoneMae">(DD) Telefone</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteTelefoneMae" name="funcionarioCadastrarPacienteTelefoneMae" value="">
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteTipoMedico">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteTipoMedico" id="funcionarioCadastrarPacienteTipoMedico">Tipo de Médico</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteTipoMedico" name="funcionarioCadastrarPacienteTipoMedico" value="">
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteSalaAtendimento">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteSalaAtendimento" id="funcionarioCadastrarPacienteSalaAtendimento">Sala de Atendimento</label><br>
-                            <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteSalaAtendimento" name="funcionarioCadastrarPacienteSalaAtendimento" value="">
-                        </div>                    
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteSintomas">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteSintomas" id="funcionarioCadastrarPacienteSintomas">Sintomas</label><br>
-                            <textarea type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteSintomas" name="funcionarioCadastrarPacienteSintomas" ></textarea>
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteAlergias">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteAlergias" id="funcionarioCadastrarPacienteAlergias">Alergias</label><br>
-                            <textarea type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteAlergias" name="funcionarioCadastrarPacienteAlergias"></textarea>
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteDoencasCronicas">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteDoencasCronicas" id="funcionarioCadastrarPacienteDoencasCronicas">Doenças Crônicas</label><br>
-                            <textarea type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteDoencasCronicas" name="funcionarioCadastrarPacienteDoencasCronicas"></textarea>
-                        </div>
-                        <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteRemediosControlados">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteRemediosControlados" id="funcionarioCadastrarPacienteRemediosControlados">Toma Remédios Controlados? Se sim, qual/quais?</label><br>
-                            <textarea type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteRemediosControlados" name="funcionarioCadastrarPacienteRemediosControlados"></textarea>
-                        </div>
-                    </form>                    
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteCPF">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteCPF" id="funcionarioCadastrarPacienteCPF">CPF</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteCPF" name="funcionarioCadastrarPacienteCPF" value="">
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteProntuario">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteProntuario" id="funcionarioCadastrarPacienteProntuario">Prontuário</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteProntuario" name="funcionarioCadastrarPacienteProntuario" value="">
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteNomeCompleto">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteNomeCompleto" id="funcionarioCadastrarPacienteNomeCompleto">Nome Completo</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteNomeCompleto" name="funcionarioCadastrarPacienteNomeCompleto" value="">
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteTipoSaguineo">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteTipoSaguineo" id="funcionarioCadastrarPacienteTipoSaguineo">Tipo Saguíneo</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteTipoSaguineo" name="funcionarioCadastrarPacienteTipoSaguineo" value="">
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteEmail">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteEmail" id="funcionarioCadastrarPacienteEmail">Email</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteEmail" name="funcionarioCadastrarPacienteEmail" value="">
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteTelefone">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteTelefone" id="funcionarioCadastrarPacienteTelefone">(DD) Telefone</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteTelefone" name="funcionarioCadastrarPacienteTelefone" value="">
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteCEP">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteCEP" id="funcionarioCadastrarPacienteCEP">CEP</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteCEP" name="funcionarioCadastrarPacienteCEP" value="">
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteRua">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteRua" id="funcionarioCadastrarPacienteRua">Rua</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteRua" name="funcionarioCadastrarPacienteRua" value="">
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteNumero">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteNumero" id="funcionarioCadastrarPacienteNumero">Número</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteNumero" name="funcionarioCadastrarPacienteNumero" value="">
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteComplemento">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteComplemento" id="funcionarioCadastrarPacienteComplemento">Complemento</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteComplemento" name="funcionarioCadastrarPacienteComplemento" value="">
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteCidade">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteCidade" id="funcionarioCadastrarPacienteCidade">Cidade</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteCidade" name="funcionarioCadastrarPacienteCidade" value="">
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteMunicipio">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteMunicipio" id="funcionarioCadastrarPacienteMunicipio">Município</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteMunicipio" name="funcionarioCadastrarPacienteMunicipio" value="">
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacientePontoReferencia">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacientePontoReferencia" id="funcionarioCadastrarPacientePontoReferencia">Ponto de Referência</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacientePontoReferencia" name="funcionarioCadastrarPacientePontoReferencia" value="">
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteUF">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteUF" id="funcionarioCadastrarPacienteUF">UF</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteUF" name="funcionarioCadastrarPacienteUF" value="">
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteLocalNascimento">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteLocalNascimento" id="funcionarioCadastrarPacienteLocalNascimento">Local de Nascimento</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteLocalNascimento" name="funcionarioCadastrarPacienteLocalNascimento" value="">
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteEstadoCivil">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteEstadoCivil" id="funcionarioCadastrarPacienteEstadoCivil">Estado Civil</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteEstadoCivil" name="funcionarioCadastrarPacienteEstadoCivil" value="">
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteSexo">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteSexo" id="funcionarioCadastrarPacienteSexo">Sexo</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteSexo" name="funcionarioCadastrarPacienteSexo" value="">
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteNomePai">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteNomePai" id="funcionarioCadastrarPacienteNomePai">Nome do Pai</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteNomePai" name="funcionarioCadastrarPacienteNomePai" value="">
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteTelefonePai">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteTelefonePai" id="funcionarioCadastrarPacienteTelefonePai">(DD) Telefone</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteTelefonePai" name="funcionarioCadastrarPacienteTelefonePai" value="">
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteNomeMae">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteNomeMae" id="funcionarioCadastrarPacienteNomeMae">Nome da Mãe</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteNomeMae" name="funcionarioCadastrarPacienteNomeMae" value="">
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteTelefoneMae">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteTelefoneMae" id="funcionarioCadastrarPacienteTelefoneMae">(DD) Telefone</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteTelefoneMae" name="funcionarioCadastrarPacienteTelefoneMae" value="">
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteTipoMedico">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteTipoMedico" id="funcionarioCadastrarPacienteTipoMedico">Tipo de Médico</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteTipoMedico" name="funcionarioCadastrarPacienteTipoMedico" value="">
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteSalaAtendimento">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteSalaAtendimento" id="funcionarioCadastrarPacienteSalaAtendimento">Sala de Atendimento</label><br>
+                        <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteSalaAtendimento" name="funcionarioCadastrarPacienteSalaAtendimento" value="">
+                    </div>                    
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteSintomas">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteSintomas" id="funcionarioCadastrarPacienteSintomas">Sintomas</label><br>
+                        <textarea type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteSintomas" name="funcionarioCadastrarPacienteSintomas" ></textarea>
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteAlergias">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteAlergias" id="funcionarioCadastrarPacienteAlergias">Alergias</label><br>
+                        <textarea type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteAlergias" name="funcionarioCadastrarPacienteAlergias"></textarea>
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteDoencasCronicas">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteDoencasCronicas" id="funcionarioCadastrarPacienteDoencasCronicas">Doenças Crônicas</label><br>
+                        <textarea type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteDoencasCronicas" name="funcionarioCadastrarPacienteDoencasCronicas"></textarea>
+                    </div>
+                    <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteRemediosControlados">
+                        <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteRemediosControlados" id="funcionarioCadastrarPacienteRemediosControlados">Toma Remédios Controlados? Se sim, qual/quais?</label><br>
+                        <textarea type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteRemediosControlados" name="funcionarioCadastrarPacienteRemediosControlados"></textarea>
+                    </div>
+                    
                     <input type="button" value="CADASTRAR PACIENTE" class="botaoCadastrarPaciente" onclick="cadastrarPacienteCriado()">
 
                 </div>
